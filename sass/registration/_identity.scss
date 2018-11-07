@@ -1,0 +1,10 @@
+$color-primary: red;
+
+.test {
+  background-color: $color-primary;
+
+  p {
+    color: $color-primary;
+  }
+}
+

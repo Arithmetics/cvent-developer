@@ -1,0 +1,14 @@
+{
+  "name": "developer",
+  "version": "1.0.0",
+  "description": "cvent scss package",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss \\\\10.1.1.50\\wwwroot\\Domains\\ClientConfig\\Opus\\cvent\\developer\\style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
