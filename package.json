@@ -4,7 +4,9 @@
   "description": "cvent scss package",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss \\\\10.1.1.50\\wwwroot\\Domains\\ClientConfig\\Opus\\cvent\\developer\\style.css -w"
+    "compile:sass": "node-sass sass/main.scss \\\\10.1.1.50\\wwwroot\\Domains\\ClientConfig\\Opus\\cvent\\developer\\style.css -w",
+    "upload:js": "cpx \"js/*.js\" \\\\10.1.1.50\\wwwroot\\Domains\\ClientConfig\\Opus\\cvent\\developer -v --watch",
+    "dev": "start npm run compile:sass && start npm run upload:js"
   },
   "author": "",
   "license": "ISC",

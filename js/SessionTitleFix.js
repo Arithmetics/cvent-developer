@@ -1,0 +1,1 @@
+document.querySelector('title').textContent += " - Sessions";
