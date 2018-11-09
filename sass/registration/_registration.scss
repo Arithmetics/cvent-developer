@@ -1,10 +1,208 @@
 // General Registraion Class
 @import '../variables';
-
+@import '../utilities';
 
 .oa-registration {
-  span {
+
+  .details, .when, .where, .planner, .addinfo, .navigation {
+    display: none;
+  }
+    
+  .container, .container-2, .container-1, .container-3, .container-4, .content {
+    width: 100%;
+    min-width: 1200px;
+   }
+  
+  .span-24 {
+    width: 100% !important;
+    min-width: 1200px !important; 
+  }
+  
+  .reg-process-content {
+    font-family: 'calibriLight', sans-serif;
+    max-width: 960px;
+    float: none !important;
+    display: block;
+    margin: auto;
+  }
+
+  .reg-process {
+    max-width: 960px;
+    float: none !important;
+    display: block;
+    margin: auto;
+  }
+
+  .reg-summary-container {
+    max-width: 960px;
+    float: none !important;
+    display: block;
+    margin: auto;
+  }
+
+  /**** WIDE BANNER TRY ***/
+
+  .container {
+    width: 1400px;
+  }
+
+  .middle {
+    margin: auto;
+  }
+
+
+
+  .header {
+    background: $header-image;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    height: 200px;
+  }
+
+  input, select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #354048;
+    padding: 8px 10px 9px;
+    font-family: 'calibriLight', sans-serif;
+    font-size: 16px;
+    line-height: inherit;
+    width: 80% !important;
 
   }
+
+  select {
+    width: 83.5% !important;
+  }
+
+  input:focus {
+    background-color: white;
+  }
+
+  .reg-field-left-column, .reg-field-right-column {
+    font-size: 18px;
+    color: #354048;
+  }
+
+  .reg-field-left-column label, .reg-field-left-column span {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #354048;
+    font-family: 'calibriLight', sans-serif;
+    font-weight: bold;
+  }
+
+  .reg-intro-text {
+    font-size: 22px;
+    color: #354048;
+    padding: 5px 5px 5px 0;
+    margin-bottom: 15px !important;
+    font-family: 'calibriLight', sans-serif;
+  }
+
+  .reg-sub-header {
+    font-family: 'agNextExtReg', sans-serif;
+    font-size: 24px;
+    color: #354048;
+    border-bottom: #354048 2px solid;
+    font-weight: 300;
+    margin-bottom: 20px !important;
+  }
+
+  .section-header {
+    font-size: 18px;
+    color: #354048;
+  }
+
+  div.reg-process-content .ui-state-focus {
+    background: #fff !important;
+  }
+
+  input:focus {
+    border-color: #90BAFE;
+  }
+
+  .already-registered-link a{
+    background-color: #354048;
+    color: #fff;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 100;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+
+  /* #ctl00_ContentPlaceHolder1_ctl00_rptSection_ctl02_ttc_ctl00_ContentPlaceHolder1_ctl00_rptSection_ctl02_ctl05 {
+    display: none;
+  } */
+
+  .reg-third-header span {
+    font-size: 14px;
+    font-family: agNextExtReg;
+    text-decoration: none;
+  }
+
+  /********** BREADCRUMB *********/
+
+  .step {
+    font-family: 'calibriLight', sans-serif;
+    font-size: 16px;
+  }
+
+  /********* BUTTONS **************/
+
+  .grButtonLeft {
+    display: none;
+  }
+
+  .grButtonRight {
+    display: none;
+  }
+
+  .grButtonMid {
+    width: auto !important;
+    height: 41px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url() !important;
+    font-family: 'calibriLight', sans-serif;
+    border-left: 0px !important;
+    border-bottom: 0px !important;
+    border-top: 0px !important;
+    border-right: 0px !important;
+  }
+
+  .grButtonMid a {
+    font-family: 'calibriLight', sans-serif;
+    text-transform: uppercase;
+    background-color: #00A4DD;
+    color: #fff;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 100;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    transition: all .3s;
+
+  }
+
+  .grButtonMid a:hover {
+    transform: scale(1.1);
+  }
+
+  /********* ERRORS **************/
+
+  .error-msg {
+    margin: 30px !important;
+    color: #ff8300;
+    font-size: 15px;
+    font-family: 'calibriLight', sans-serif;
+  }
+
   
 }
